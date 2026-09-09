@@ -1,0 +1,12 @@
+{
+  "name": "Order Sheet",
+  "short_name": "Order Sheet",
+  "description": "Order Sheet Calculator by paulm",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#107c41",
+  "orientation": "portrait",
+  "icons": []
+}
