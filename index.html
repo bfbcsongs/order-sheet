@@ -529,7 +529,26 @@
 
 </script>
 
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker
+            .register('./sw.js')
+            .then(function(registration) {
+                console.log(
+                    'Order Sheet offline service worker registered:',
+                    registration.scope
+                );
+            })
+            .catch(function(error) {
+                console.error(
+                    'Order Sheet service worker registration failed:',
+                    error
+                );
+            });
+    });
+}
+</script>
+
 </body>
 </html>
-
-That's it, pal. The BO "45" remains part of the price lock/unlock, and CLEAR QTY only wipes the four quantities. Your prices, Payment, and Bal remain saved. 🖐️
